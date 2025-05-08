@@ -1,11 +1,31 @@
-import { pre } from "motion/react-client";
 import React, { useState } from "react";
+import { navLinks } from "../Constant";
+import Button from "../Components/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const closeMenu = () => setIsOpen(false);
 
-  const NavItems = () => {
-    return <ul className="nav-ul">{}</ul>;
+  const NavItems = ({ onClick = () => {} }) => {
+    return (
+      <ul className="nav-ul">
+        {navLinks.map(({ id, href, name }) =>
+          id === 5 ? (
+            <Button name={name} containerClass={"nav-li cursor-pointer"} />
+          ) : (
+            <a href={href} className="nav-li">
+              <li
+                key={id}
+                className="nav-li_a cursor-pointer"
+                onClick={onClick}
+              >
+                {name}
+              </li>
+            </a>
+          )
+        )}
+      </ul>
+    );
   };
 
   return (
@@ -20,7 +40,7 @@ const Navbar = () => {
           </a>
 
           <button
-            className="text-neutral-400 hover:text-white focus:outline-none  flex sm:hidden"
+            className="text-neutral-400 hover:text-white focus:outline-none  flex sm:hidden cursor-pointer"
             aria-label="Toggle menu"
             onClick={() => setIsOpen((prev) => !prev)}
           >
@@ -35,6 +55,12 @@ const Navbar = () => {
             <NavItems />
           </nav>
         </div>
+      </div>
+
+      <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
+        <nav className="p-5">
+          <NavItems onClick={closeMenu} />
+        </nav>
       </div>
     </header>
   );

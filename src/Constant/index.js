@@ -19,50 +19,55 @@ export const navLinks = [
     name: "Contact",
     href: "#contact",
   },
+  {
+    id: 5,
+    name: "Resume",
+    href: "#",
+  },
 ];
 
 export const clientReviews = [
   {
     id: 1,
-    name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
+    name: "Deborah Williams",
+    position: "Based in UK",
     img: "assets/review1.png",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "From the very start, Olamide was professional, proactive, and super easy to collaborate with. He built a responsive dashboard for our internal tools, and the performance improvements were immediate. His frontend skills are top-tier.",
   },
   {
     id: 2,
-    name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
+    name: "Mark Ross",
+    position: "Based in USA",
     img: "assets/review2.png",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+      "Olamide exceeded our expectations with the landing page he built. The design was clean, the animations were smooth, and the user experience was on point. He took our vision and brought it to life flawlessly. Would definitely work with him again!",
   },
   {
     id: 3,
-    name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
+    name: "John Doe",
+    position: "Based in Dubai ",
     img: "assets/review3.png",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "We needed a fast, mobile-friendly portfolio site, and Olamide delivered exactly that — and then some. He was quick, communicative, and nailed every detail. Couldn’t have asked for a smoother process.",
   },
   {
     id: 4,
     name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
+    position: "Based in Germany",
     img: "assets/review4.png",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+      "Olamide helped us launch our startup's MVP frontend with React and Tailwind, and the results were 🔥. Clean code, sharp design, and everything delivered on time. He’s a game changer if you need someone reliable and skilled.",
   },
 ];
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "Nike - E-commerce Landing Page",
+    desc: "A high-converting landing page for a Nike-inspired e-commerce concept, built to grab attention and showcase products with bold visuals and modern aesthetics.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+      "Crafted with Next.js 14, Tailwind CSS, TypeScript, and Framer Motion, this responsive frontend focuses solely on sleek design, engaging animations, and clear calls to action — no backend functionality included.",
+    href: "https://nike-landing-page-pi-tan.vercel.app/",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/project-logo1.png",
     logoStyle: {
@@ -84,24 +89,20 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
         name: "Framer Motion",
         path: "/assets/framer.png",
       },
     ],
   },
   {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+    title: "Brainwave - Real-Time AI Chat App Landing Page",
+    desc: "A sleek and modern landing page concept for Brainwave — a fictional real-time AI chat app, designed to showcase key features and attract early users or investors.",
     subdesc:
-      "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+      "Built with Next.js, Tailwind CSS, TypeScript, and Framer Motion, this fully responsive frontend focuses on clean visuals, animated interactions, and clear messaging — no backend or real-time features included.",
+
+    href: "https://brainwave-tau-six.vercel.app/",
     texture: "/textures/project/project2.mp4",
-    logo: "/assets/project-logo2.png",
+    logo: "/assets/project-logo2.svg",
     logoStyle: {
       backgroundColor: "#13202F",
       border: "0.2px solid #17293E",
@@ -121,22 +122,17 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
         name: "Framer Motion",
         path: "/assets/framer.png",
       },
     ],
   },
   {
-    title: "CarePulse - Health Management System",
-    desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+    title: "MovieApp - Watch Thrilling Movies",
+    desc: "A visually engaging movie streaming app landing page built to showcase trending, popular, and upcoming films with a modern UI and smooth user experience.",
     subdesc:
-      "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-    href: "https://www.youtube.com/watch?v=lEflo_sc82g",
+      "Developed using React, Tailwind CSS, and Appwrite, this responsive frontend project demonstrates clean layout, dynamic content rendering, and a cinematic design — perfect for users looking to explore movies effortlessly.",
+    href: "https://movie-app-nine-ivory.vercel.app/",
     texture: "/textures/project/project3.mp4",
     logo: "/assets/project-logo3.png",
     logoStyle: {
@@ -160,82 +156,8 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
-    ],
-  },
-  {
-    title: "Horizon - Online Banking Platform",
-    desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
-    subdesc:
-      "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-    href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
-    texture: "/textures/project/project4.mp4",
-    logo: "/assets/project-logo4.png",
-    logoStyle: {
-      backgroundColor: "#0E1F38",
-      border: "0.2px solid #0E2D58",
-      boxShadow: "0px 0px 60px 0px #2F67B64D",
-    },
-    spotlight: "/assets/spotlight4.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
-    ],
-  },
-  {
-    title: "Imaginify - AI Photo Manipulation App",
-    desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
-    subdesc:
-      "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-    href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-    texture: "/textures/project/project5.mp4",
-    logo: "/assets/project-logo5.png",
-    logoStyle: {
-      backgroundColor: "#1C1A43",
-      border: "0.2px solid #252262",
-      boxShadow: "0px 0px 60px 0px #635BFF4D",
-    },
-    spotlight: "/assets/spotlight5.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        name: "Appwrite",
+        path: "/assets/appwrite.png",
       },
       {
         id: 4,
@@ -284,32 +206,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    name: "Freelance Projects",
+    pos: "Frontend Developer",
+    duration: "Oct 2023 – Present",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
+      "Developed and deployed responsive web interfaces using React, Tailwind CSS, and TypeScript. Projects include a movie discovery app, SaaS landing pages, and portfolios, with a focus on clean UI and optimized performance.",
+    icon: "/assets/react.svg",
     animation: "victory",
   },
   {
     id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
+    name: "Open Source Contributor",
+    pos: "Contributor",
+    duration: "Jul 2023 – Oct 2023",
     title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+      "Contributed to open-source projects by improving React components, fixing Tailwind layouts, and enhancing UI interactions. Gained practical experience with GitHub and collaborative development workflows.",
+    icon: "/assets/github.svg",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
+    name: "Personal Projects",
+    pos: "Intern (Self-Initiated)",
+    duration: "Apr 2023 – Jul 2023",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
+      "Built foundational frontend skills through hands-on projects using JavaScript, React, and Tailwind CSS. Focused on reusable components, responsive layouts, and developing a strong UI/UX sense.",
+    icon: "/assets/code.png",
     animation: "salute",
   },
 ];

@@ -52,7 +52,7 @@ body {
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-lg md:text-base hover:text-white transition-colors cursor-pointer;
   }
 
   .nav-sidebar {
@@ -100,7 +100,7 @@ body {
   }
 
   .tech-logo {
-    @apply w-10 h-10 rounded-md p-2 bg-neutral-100 opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center;
+    @apply w-10 h-10 rounded-md p-2 bg-neutral-100/10 opacity-100 backdrop-filter backdrop-blur-lg flex justify-center items-center;
   }
 
   /* clients section */
@@ -109,7 +109,7 @@ body {
   }
 
   .client-review {
-    @apply rounded-lg md:p-10 p-5 col-span-1 bg-black-300 opacity-50;
+    @apply rounded-lg md:p-10 p-5 col-span-1 bg-black-300 opacity-75;
   }
 
   .client-content {
