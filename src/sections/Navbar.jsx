@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { navLinks } from "../Constant";
-import Button from "../Components/Button";
+import DownloadButton from "../Components/DownloadButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,11 @@ const Navbar = () => {
       <ul className="nav-ul">
         {navLinks.map(({ id, href, name }) =>
           id === 5 ? (
-            <Button name={name} containerClass={"nav-li cursor-pointer"} />
+            <DownloadButton
+              name={name}
+              fileUrl="/assets/Resume.pdf"
+              containerClass={"nav-li cursor-pointer"}
+            />
           ) : (
             <a href={href} className="nav-li">
               <li
