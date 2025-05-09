@@ -95,7 +95,7 @@ export const myProjects = [
     ],
   },
   {
-    title: "Brainwave - Real-Time AI Chat App Landing Page",
+    title: "Brainwave - AI Chat App Landing Page",
     desc: "A sleek and modern landing page concept for Brainwave — a fictional real-time AI chat app, designed to showcase key features and attract early users or investors.",
     subdesc:
       "Built with Next.js, Tailwind CSS, TypeScript, and Framer Motion, this fully responsive frontend focuses on clean visuals, animated interactions, and clear messaging — no backend or real-time features included.",
