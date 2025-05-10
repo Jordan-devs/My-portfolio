@@ -36,7 +36,7 @@ const Hero = () => {
             <HeroCamera isMobile={isMobile}>
               <HackerRoom
                 position={sizes.deskPosition}
-                rotation={[0.1, -Math.PI, 0]}
+                rotation={[0.1, isMobile ? 0 : Math.PI, 0]}
                 scale={sizes.deskScale}
               />
             </HeroCamera>
