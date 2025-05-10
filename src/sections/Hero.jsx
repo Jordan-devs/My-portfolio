@@ -17,6 +17,8 @@ const Hero = () => {
   const isTablet = useMediaQuery({ maxWidth: 1024, minWidth: 768 });
 
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  const showGroup = isTablet || !isMobile;
+
 
   return (
     <section id="home" className="min-h-screen w-full flex flex-col relative">
@@ -39,11 +41,12 @@ const Hero = () => {
                 scale={sizes.deskScale}
               />
             </HeroCamera>
-            <group>
-              <Target position={sizes.targetPosition} />
-              <ReactLogo position={sizes.reactLogoPosition} />
-              <Cube position={sizes.cubePosition} />
-            </group>
+            {showGroup && (
+              <group>
+                <Target position={sizes.targetPosition} />
+                <ReactLogo position={sizes.reactLogoPosition} />
+                <Cube position={sizes.cubePosition} />
+              </group>)}
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
