@@ -28,29 +28,36 @@ const Hero = () => {
         <p className="hero_tag text-gray_gradient">Smart dev for bold brands</p>
       </div>
 
-      <div className="w-full h-full absolute inset-0">
+      <div className="w-full h-full mt-10 absolute inset-0">
         {/* <Leva /> */}
-        <Canvas className="w-full h-full">
-          <Suspense fallback={<CanvasLoader />}>
-            <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-            <HeroCamera isMobile={isMobile}>
-              <HackerRoom
-                position={sizes.deskPosition}
-                rotation={[0.1, isMobile ? 0 : Math.PI, 0]}
-                scale={sizes.deskScale}
-              />
-            </HeroCamera>
-            {showGroup && (
+        {!showGroup ? (
+          <div className="w-full h-full absolute inset-0 flex items-center justify-center">
+            <img
+              src="/assets/heroImage.png"
+              alt="hero image"
+              width={isSmall ? 330 : isMobile ? 450 : isTablet ? 450 : 500}
+            />
+          </div>
+        ) : (
+          <Canvas className="w-full h-full">
+            <Suspense fallback={<CanvasLoader />}>
+              <HeroCamera isMobile={isMobile}>
+                <HackerRoom
+                  position={sizes.deskPosition}
+                  rotation={[0.1, isMobile ? 0 : Math.PI, 0]}
+                  scale={sizes.deskScale}
+                />
+              </HeroCamera>
               <group>
                 <Target position={sizes.targetPosition} />
                 <ReactLogo position={sizes.reactLogoPosition} />
                 <Cube position={sizes.cubePosition} />
               </group>
-            )}
-            <ambientLight intensity={1} />
-            <directionalLight position={[10, 10, 10]} intensity={0.5} />
-          </Suspense>
-        </Canvas>
+              <ambientLight intensity={1} />
+              <directionalLight position={[10, 10, 10]} intensity={0.5} />
+            </Suspense>
+          </Canvas>
+        )}
       </div>
 
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">

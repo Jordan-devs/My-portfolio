@@ -1,10 +1,15 @@
 import { useState } from "react";
 import Globe from "react-globe.gl";
+import { useMediaQuery } from "react-responsive";
 
 import Button from "../Components/Button.jsx";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
+
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ maxWidth: 1024, minWidth: 768 });
+  const showGroup = isTablet || !isMobile;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(" prifathil@gmail.com");
@@ -57,25 +62,14 @@ const About = () => {
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={0.5}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[
-                  {
-                    lat: 40,
-                    lng: -100,
-                    text: "Lagos, Nigeria",
-                    color: "white",
-                    size: 15,
-                  },
-                ]}
-              />
+              <div>
+                <img
+                  src="/assets/globe.png"
+                  height={326}
+                  width={326}
+                  alt="globe"
+                />
+              </div>
             </div>
             <div>
               <p className="grid-headtext">
